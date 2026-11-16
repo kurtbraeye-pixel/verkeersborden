@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Verkeersborden oefenen</title>
+  <meta name="description" content="Oefen de Belgische verkeersborden per thema of door elkaar.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <button class="brand" id="homeBtn" type="button" aria-label="Naar startscherm">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span>Verkeersborden oefenen</span>
+    </button>
+    <div class="topbar-right">
+      <span class="topbar-sub">Theorie rijbewijs België</span>
+      <button class="speak-toggle" id="speakToggle" type="button" hidden aria-pressed="true">
+        <span class="speak-icon" aria-hidden="true">🔊</span><span class="speak-label">Voorlezen aan</span>
+      </button>
+    </div>
+  </header>
+  <main id="app" tabindex="-1"></main>
+  <footer class="footer">
+    Bron: FOD Mobiliteit – <em>Overzicht van de verkeersborden vanaf 01/06/2027</em> (v. 2026-07-17)
+  </footer>
+  <script src="data/borden.js"></script>
+  <script src="audio/manifest.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
