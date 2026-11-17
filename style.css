@@ -157,3 +157,4 @@ h2 { font-size: 17px; margin: 0 0 12px; color: var(--blue-dark); text-transform:
 
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .quiz-tools { display: flex; align-items: center; gap: 10px; }
+.footer a { color: var(--blue); }

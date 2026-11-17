@@ -42,4 +42,4 @@ dan leest de app die zin met de browserstem voor. Je API-sleutel komt niet in de
 - `data/borden.js`: alle borden met code, thema, betekenis en extra uitleg
 - `img/`: afbeeldingen van de borden (verkleind)
 
-Bron van de betekenissen: FOD Mobiliteit, *Code van de openbare weg – Overzicht van de verkeersborden vanaf 01/06/2027* (v. 2026-07-17).
+Bron van de borden (afbeeldingen) en hun korte omschrijving: [verkeersbord.be – overzicht officiële verkeersborden](https://www.verkeersbord.be/officieel/).

@@ -1,50 +1,55 @@
-// Bron: Code van de openbare weg – Overzicht van de verkeersborden vanaf 01/06/2027 (v. 2026-07-17)
+// Bron: https://www.verkeersbord.be/officieel/ (overzicht officiële Belgische verkeersborden)
 window.BORDEN = {
  "themes": [
   {
    "id": "A",
    "name": "Gevaarsborden",
-   "count": 39
+   "count": 31
   },
   {
    "id": "B",
    "name": "Voorrangsborden",
-   "count": 9
+   "count": 16
   },
   {
    "id": "C",
    "name": "Verbodsborden",
-   "count": 36
+   "count": 32
   },
   {
    "id": "D",
    "name": "Gebodsborden",
-   "count": 24
+   "count": 19
   },
   {
-   "id": "EZ",
-   "name": "Parkeren en zones",
-   "count": 10
+   "id": "E",
+   "name": "Parkeren en stilstaan",
+   "count": 18
   },
   {
    "id": "F",
    "name": "Aanwijzingsborden",
-   "count": 75
+   "count": 78
   },
   {
-   "id": "R",
-   "name": "Bijzondere voorschriften",
-   "count": 22
+   "id": "G",
+   "name": "Onderborden",
+   "count": 23
   },
   {
    "id": "M",
-   "name": "Onderborden",
-   "count": 48
+   "name": "Onderborden fietsen en bromfietsen",
+   "count": 22
   },
   {
-   "id": "V",
-   "name": "Borden op voertuigen",
-   "count": 6
+   "id": "T",
+   "name": "Afbakeningsborden",
+   "count": 9
+  },
+  {
+   "id": "Z",
+   "name": "Zoneborden",
+   "count": 24
   }
  ],
  "signs": [
@@ -54,9 +59,7 @@ window.BORDEN = {
    "theme": "A",
    "img": "img/A1a.png",
    "title": "gevaarlijke bocht naar links",
-   "info": [
-    "Verkeersborden – Signaux routiers Gevaarsborden Signaux de danger gevaarlijke bocht naar links"
-   ]
+   "info": []
   },
   {
    "id": "A1b",
@@ -71,7 +74,7 @@ window.BORDEN = {
    "code": "A1c",
    "theme": "A",
    "img": "img/A1c.png",
-   "title": "dubbele bocht of opeenvolging van meer dan twee bochten, de eerste naar links",
+   "title": "gevaarlijke dubbele of meer dan twee bochten, de eerste naar links",
    "info": []
   },
   {
@@ -79,7 +82,7 @@ window.BORDEN = {
    "code": "A1d",
    "theme": "A",
    "img": "img/A1d.png",
-   "title": "dubbele bocht of opeenvolging van meer dan twee bochten, de eerste naar rechts",
+   "title": "gevaarlijke dubbele of meer dan twee bochten, de eerste naar rechts",
    "info": []
   },
   {
@@ -88,19 +91,15 @@ window.BORDEN = {
    "theme": "A",
    "img": "img/A3.png",
    "title": "gevaarlijke daling",
-   "info": [
-    "Het percentage duidt de hellingsgraad aan."
-   ]
+   "info": []
   },
   {
    "id": "A5",
    "code": "A5",
    "theme": "A",
    "img": "img/A5.png",
-   "title": "steile helling",
-   "info": [
-    "Het percentage duidt de hellingsgraad aan."
-   ]
+   "title": "gevaarlijke helling",
+   "info": []
   },
   {
    "id": "A7a",
@@ -115,7 +114,7 @@ window.BORDEN = {
    "code": "A7b",
    "theme": "A",
    "img": "img/A7b.png",
-   "title": "rijbaanversmalling",
+   "title": "rijbaanversmalling links",
    "info": []
   },
   {
@@ -123,15 +122,7 @@ window.BORDEN = {
    "code": "A7c",
    "theme": "A",
    "img": "img/A7c.png",
-   "title": "rijbaanversmalling",
-   "info": []
-  },
-  {
-   "id": "A8",
-   "code": "A8",
-   "theme": "A",
-   "img": "img/A8.png",
-   "title": "zachte berm",
+   "title": "rijbaanversmalling rechts",
    "info": []
   },
   {
@@ -155,7 +146,7 @@ window.BORDEN = {
    "code": "A13",
    "theme": "A",
    "img": "img/A13.png",
-   "title": "oneffen wegdek of wegdek in slechte staat",
+   "title": "dwarse uitholling of ezelsrug",
    "info": []
   },
   {
@@ -171,15 +162,7 @@ window.BORDEN = {
    "code": "A15",
    "theme": "A",
    "img": "img/A15.png",
-   "title": "glibberige rijbaan",
-   "info": []
-  },
-  {
-   "id": "A16",
-   "code": "A16",
-   "theme": "A",
-   "img": "img/A16.png",
-   "title": "ijzel of sneeuw",
+   "title": "gladde rijbaan - Slipgevaar",
    "info": []
   },
   {
@@ -191,19 +174,11 @@ window.BORDEN = {
    "info": []
   },
   {
-   "id": "A18",
-   "code": "A18",
-   "theme": "A",
-   "img": "img/A18.png",
-   "title": "mist",
-   "info": []
-  },
-  {
    "id": "A19",
    "code": "A19",
    "theme": "A",
    "img": "img/A19.png",
-   "title": "vallende stenen of aanwezigheid van stenen",
+   "title": "vallende stenen",
    "info": []
   },
   {
@@ -219,15 +194,7 @@ window.BORDEN = {
    "code": "A23",
    "theme": "A",
    "img": "img/A23.png",
-   "title": "plaats waar speciaal veel kinderen komen",
-   "info": []
-  },
-  {
-   "id": "A24",
-   "code": "A24",
-   "theme": "A",
-   "img": "img/A24.png",
-   "title": "plaats waar speciaal veel ruiters komen",
+   "title": "opgelet kinderen",
    "info": []
   },
   {
@@ -235,7 +202,7 @@ window.BORDEN = {
    "code": "A25",
    "theme": "A",
    "img": "img/A25.png",
-   "title": "oversteekplaats voor fietsers en bestuurders van tweewielige bromfietsen of plaats waar die bestuurders op de rijbaan komen",
+   "title": "oversteekplaats voor fietsers en bromfietsers",
    "info": []
   },
   {
@@ -243,10 +210,16 @@ window.BORDEN = {
    "code": "A27",
    "theme": "A",
    "img": "img/A27.png",
-   "title": "doortocht van dieren",
-   "info": [
-    "Het symbool duidt de beoogde diersoort aan."
-   ]
+   "title": "overstekend groot wild",
+   "info": []
+  },
+  {
+   "id": "A29",
+   "code": "A29",
+   "theme": "A",
+   "img": "img/A29.png",
+   "title": "overstekend vee",
+   "info": []
   },
   {
    "id": "A31",
@@ -257,27 +230,11 @@ window.BORDEN = {
    "info": []
   },
   {
-   "id": "A32",
-   "code": "A32",
-   "theme": "A",
-   "img": "img/A32.png",
-   "title": "file",
-   "info": []
-  },
-  {
    "id": "A33",
    "code": "A33",
    "theme": "A",
    "img": "img/A33.png",
-   "title": "file verkeerslichten",
-   "info": []
-  },
-  {
-   "id": "A34",
-   "code": "A34",
-   "theme": "A",
-   "img": "img/A34.png",
-   "title": "ongeval",
+   "title": "verkeerslichten",
    "info": []
   },
   {
@@ -285,7 +242,7 @@ window.BORDEN = {
    "code": "A35",
    "theme": "A",
    "img": "img/A35.png",
-   "title": "overtocht van vliegtuigen op geringe hoogte",
+   "title": "vliegtuigen op geringe hoogte",
    "info": []
   },
   {
@@ -301,7 +258,7 @@ window.BORDEN = {
    "code": "A39",
    "theme": "A",
    "img": "img/A39.png",
-   "title": "verkeer toegelaten in beide richtingen na een gedeelte van de rijbaan met éénrichtingsverkeer",
+   "title": "twee richtingsverkeer toegelaten na een stuk éénrichtingsverkeer",
    "info": []
   },
   {
@@ -321,27 +278,19 @@ window.BORDEN = {
    "info": []
   },
   {
-   "id": "A45",
-   "code": "A45",
-   "theme": "A",
-   "img": "img/A45.png",
-   "title": "overweg voor enkel spoor",
-   "info": []
-  },
-  {
-   "id": "A47",
-   "code": "A47",
-   "theme": "A",
-   "img": "img/A47.png",
-   "title": "overweg voor twee of meer sporen",
-   "info": []
-  },
-  {
    "id": "A49",
    "code": "A49",
    "theme": "A",
    "img": "img/A49.png",
-   "title": "kruising van een openbare weg door een of meer in de rijbaan aangelegde sporen",
+   "title": "openbare weg kruist met een of meer in de rijbaan aangelegde sporen",
+   "info": []
+  },
+  {
+   "id": "A50",
+   "code": "A50",
+   "theme": "A",
+   "img": "img/A50.png",
+   "title": "opgelet file",
    "info": []
   },
   {
@@ -350,24 +299,6 @@ window.BORDEN = {
    "theme": "A",
    "img": "img/A51.png",
    "title": "gevaar dat niet door een speciaal symbool wordt bepaald",
-   "info": [
-    "Een onderbord duidt de aard van het gevaar aan."
-   ]
-  },
-  {
-   "id": "A52",
-   "code": "A52",
-   "theme": "A",
-   "img": "img/A52.png",
-   "title": "spoorvorming",
-   "info": []
-  },
-  {
-   "id": "A53",
-   "code": "A53",
-   "theme": "A",
-   "img": "img/A53.png",
-   "title": "verzinkbare paaltjes",
    "info": []
   },
   {
@@ -399,15 +330,63 @@ window.BORDEN = {
    "code": "B11",
    "theme": "B",
    "img": "img/B11.png",
-   "title": "einde van voorrangsweg",
+   "title": "einde voorrangsweg",
    "info": []
   },
   {
-   "id": "B15",
-   "code": "B15",
+   "id": "B15a",
+   "code": "B15a",
    "theme": "B",
-   "img": "img/B15.png",
-   "title": "voorrang op het volgende kruispunt",
+   "img": "img/B15a.png",
+   "title": "voorrang op de kruisende zijwegen",
+   "info": []
+  },
+  {
+   "id": "B15b",
+   "code": "B15b",
+   "theme": "B",
+   "img": "img/B15b.png",
+   "title": "voorrang op kruisende zijweg",
+   "info": []
+  },
+  {
+   "id": "B15c",
+   "code": "B15c",
+   "theme": "B",
+   "img": "img/B15c.png",
+   "title": "voorrang op kruisende zijweg",
+   "info": []
+  },
+  {
+   "id": "B15d",
+   "code": "B15d",
+   "theme": "B",
+   "img": "img/B15d.png",
+   "title": "voorrang op kruisende zijweg",
+   "info": []
+  },
+  {
+   "id": "B15e",
+   "code": "B15e",
+   "theme": "B",
+   "img": "img/B15e.png",
+   "title": "voorrang op kruisende zijweg",
+   "info": []
+  },
+  {
+   "id": "B15f",
+   "code": "B15f",
+   "theme": "B",
+   "img": "img/B15f.png",
+   "title": "voorrang op kruisende zijweg",
+   "info": []
+  },
+  {
+   "id": "B15g",
+   "code": "B15g",
+   "theme": "B",
+   "img": "img/B15g.png",
+   "title": "voorrang op kruisende zijweg",
    "info": []
   },
   {
@@ -423,7 +402,7 @@ window.BORDEN = {
    "code": "B19",
    "theme": "B",
    "img": "img/B19.png",
-   "title": "smalle doorgang: voorrang verlenen aan de bestuurders die uit de tegenovergestelde richting komen",
+   "title": "smalle doorgang voorrang verlenen aan de bestuurders die uit de tegenovergestelde richting komen",
    "info": []
   },
   {
@@ -431,7 +410,7 @@ window.BORDEN = {
    "code": "B21",
    "theme": "B",
    "img": "img/B21.png",
-   "title": "smalle doorgang: voorrang ten opzichte van de bestuurders die uit de tegenovergestelde richting komen",
+   "title": "smalle doorgang voorrang ten opzichte van de bestuurders die uit de tegenovergestelde richting komen",
    "info": []
   },
   {
@@ -439,7 +418,15 @@ window.BORDEN = {
    "code": "B22",
    "theme": "B",
    "img": "img/B22.png",
-   "title": "toelating voor fietsers en bestuurders van speedpedelecs om de in de artikelen 57 en 60 bedoelde verkeerslichten voorbij te rijden in de door de pijl of pijlen aangegeven richtingen, wanneer deze verkeerslichten het verbieden, onder de voorwaarde voorrang te verlenen aan de andere weggebruikers die zich op de openbare weg verplaatsen",
+   "title": "fietsers en speed pedelecs mogen rechtsaf slaan en de verkeerslichten voorbijrijden",
+   "info": []
+  },
+  {
+   "id": "B23",
+   "code": "B23",
+   "theme": "B",
+   "img": "img/B23.png",
+   "title": "fietsers en speed pedelecs mogen rechtdoor rijden en de verkeerslichten voorbijrijden",
    "info": []
   },
   {
@@ -463,15 +450,15 @@ window.BORDEN = {
    "code": "C5",
    "theme": "C",
    "img": "img/C5.png",
-   "title": "verboden toegang voor motorvoertuigen met meer dan twee wielen en voor motorfietsen met zijspan",
+   "title": "verboden toegang voor bestuurders van motorvoertuigen",
    "info": []
   },
   {
-   "id": "C6",
-   "code": "C6",
+   "id": "C5_C7",
+   "code": "C5-C7",
    "theme": "C",
-   "img": "img/C6.png",
-   "title": "verboden toegang voor motorvoertuigen met vier wielen, geconstrueerd voor onverhard terrein, met een open carrosserie, een stuur als op een motorfiets en een zadel",
+   "img": "img/C5_C7.png",
+   "title": "verboden toegang voor bestuurders van motorvoertuigen en motorfietsen",
    "info": []
   },
   {
@@ -479,15 +466,7 @@ window.BORDEN = {
    "code": "C7",
    "theme": "C",
    "img": "img/C7.png",
-   "title": "verboden toegang voor motorfietsen",
-   "info": []
-  },
-  {
-   "id": "C8",
-   "code": "C8",
-   "theme": "C",
-   "img": "img/C8.png",
-   "title": "verboden toegang voor landbouwvoertuigen",
+   "title": "verboden toegang voor bestuurders van motorfietsen",
    "info": []
   },
   {
@@ -495,7 +474,15 @@ window.BORDEN = {
    "code": "C9",
    "theme": "C",
    "img": "img/C9.png",
-   "title": "verboden toegang voor bromfietsen",
+   "title": "verboden toegang voor bestuurders van bromfietsen",
+   "info": []
+  },
+  {
+   "id": "C9_C11",
+   "code": "C9-C11",
+   "theme": "C",
+   "img": "img/C9_C11.png",
+   "title": "verboden toegang voor bestuurders van bromfietsen en fietsen",
    "info": []
   },
   {
@@ -503,7 +490,7 @@ window.BORDEN = {
    "code": "C11",
    "theme": "C",
    "img": "img/C11.png",
-   "title": "verboden toegang voor rijwielen",
+   "title": "verboden toegang voor bestuurders van rijwielen",
    "info": []
   },
   {
@@ -511,7 +498,7 @@ window.BORDEN = {
    "code": "C13",
    "theme": "C",
    "img": "img/C13.png",
-   "title": "verboden toegang voor gespannen",
+   "title": "verboden toegang voor bestuurders van gespannen",
    "info": []
   },
   {
@@ -527,7 +514,7 @@ window.BORDEN = {
    "code": "C17",
    "theme": "C",
    "img": "img/C17.png",
-   "title": "verboden toegang voor handkarren",
+   "title": "verboden toegang voor bestuurders van handkarren",
    "info": []
   },
   {
@@ -543,7 +530,7 @@ window.BORDEN = {
    "code": "C21",
    "theme": "C",
    "img": "img/C21.png",
-   "title": "verboden toegang voor voertuigen of slepen waarvan de massa in beladen toestand hoger is dan de aangeduide massa",
+   "title": "verboden toegang voor bestuurders van voertuigen waarvan de massa in beladen toestand hoger is dan de aangeduide massa",
    "info": []
   },
   {
@@ -551,7 +538,7 @@ window.BORDEN = {
    "code": "C22",
    "theme": "C",
    "img": "img/C22.png",
-   "title": "verboden toegang voor voertuigen of slepen waarvan de massa in beladen toestand per as hoger is dan de aangeduide massa",
+   "title": "verboden toegang voor bestuurders van autocars",
    "info": []
   },
   {
@@ -559,49 +546,39 @@ window.BORDEN = {
    "code": "C23",
    "theme": "C",
    "img": "img/C23.png",
-   "title": "verboden toegang voor autobussen en autocars",
+   "title": "verboden toegang voor bestuurders van voertuigen bestemd of gebruikt voor het vervoer van zaken",
    "info": []
   },
   {
-   "id": "C24",
-   "code": "C24",
+   "id": "C24a",
+   "code": "C24a",
    "theme": "C",
-   "img": "img/C24.png",
-   "title": "verboden toegang voor motorvoertuigen of slepen ontworpen en gebouwd voor het vervoer van goederen",
-   "info": [
-    "Wanneer een opschrift op een onderbord of in lichte kleur op het vrachtwagensymbool is aangebracht, betekent dit dat het verbod is beperkt tot voertuigen of slepen waarvan de maximale toegelaten massa hoger is dan de aangeduide massa."
-   ]
-  },
-  {
-   "id": "C25a",
-   "code": "C25a",
-   "theme": "C",
-   "img": "img/C25a.png",
-   "title": "verboden toegang voor voertuigen of slepen die de gevaarlijke goederen, bepaald door de voor vervoer van gevaarlijke goederen bevoegde overheden, vervoeren",
+   "img": "img/C24a.png",
+   "title": "verboden toegang voor bestuurders van voertuigen die gevaarlijke goederen vervoeren",
    "info": []
   },
   {
-   "id": "C25b",
-   "code": "C25b",
+   "id": "C24b",
+   "code": "C24b",
    "theme": "C",
-   "img": "img/C25b.png",
-   "title": "verboden toegang voor voertuigen of slepen die de gevaarlijke ontvlambare of ontplofbare stoffen, bepaald door de voor vervoer van gevaarlijke goederen bevoegde overheden, vervoeren",
+   "img": "img/C24b.png",
+   "title": "verboden toegang voor bestuurders van voertuigen die gevaarlijke ontvlambare of ontplofbare stoffen vervoeren",
    "info": []
   },
   {
-   "id": "C25c",
-   "code": "C25c",
+   "id": "C24c",
+   "code": "C24c",
    "theme": "C",
-   "img": "img/C25c.png",
-   "title": "verboden toegang voor voertuigen of slepen die de gevaarlijke waterverontreinigende stoffen, bepaald door de voor vervoer van gevaarlijke goederen bevoegde overheden, vervoeren",
+   "img": "img/C24c.png",
+   "title": "verboden toegang voor bestuurders van voertuigen die gevaarlijke verontreinigende stoffen vervoeren",
    "info": []
   },
   {
-   "id": "C26",
-   "code": "C26",
+   "id": "C25",
+   "code": "C25",
    "theme": "C",
-   "img": "img/C26.png",
-   "title": "verboden toegang voor voertuigen of slepen waarvan de lengte, lading inbegrepen, groter is dan de aangeduide",
+   "img": "img/C25.png",
+   "title": "verboden voor voertuigen langer dan het aangeduide",
    "info": []
   },
   {
@@ -609,7 +586,7 @@ window.BORDEN = {
    "code": "C27",
    "theme": "C",
    "img": "img/C27.png",
-   "title": "verboden toegang voor voertuigen of slepen waarvan de breedte, lading inbegrepen, groter is dan de aangeduide",
+   "title": "verboden voor voertuigen breder dan het aangeduide",
    "info": []
   },
   {
@@ -617,39 +594,23 @@ window.BORDEN = {
    "code": "C29",
    "theme": "C",
    "img": "img/C29.png",
-   "title": "verboden toegang voor voertuigen of slepen waarvan de hoogte, lading inbegrepen, groter is dan de aangeduide",
+   "title": "verboden voor voertuigen hoger dan het aangeduide",
    "info": []
   },
   {
-   "id": "C30",
-   "code": "C30",
+   "id": "C31a",
+   "code": "C31a",
    "theme": "C",
-   "img": "img/C30.png",
-   "title": "verboden toegang voor voertuigen die een kampeeraanhangwagen trekken",
+   "img": "img/C31a.png",
+   "title": "verbod om links af te slaan",
    "info": []
   },
   {
-   "id": "C31",
-   "code": "C31",
+   "id": "C31b",
+   "code": "C31b",
    "theme": "C",
-   "img": "img/C31.png",
-   "title": "verboden toegang voor kampeerwagens",
-   "info": []
-  },
-  {
-   "id": "C32a",
-   "code": "C32a",
-   "theme": "C",
-   "img": "img/C32a.png",
-   "title": "verbod voor de bestuurders aan het volgend kruispunt af te slaan in de richting door de pijl aangegeven",
-   "info": []
-  },
-  {
-   "id": "C32b",
-   "code": "C32b",
-   "theme": "C",
-   "img": "img/C32b.png",
-   "title": "verbod voor de bestuurders aan het volgend kruispunt af te slaan in de richting door de pijl aangegeven",
+   "img": "img/C31b.png",
+   "title": "verbod rechts af te slaan",
    "info": []
   },
   {
@@ -657,7 +618,7 @@ window.BORDEN = {
    "code": "C33",
    "theme": "C",
    "img": "img/C33.png",
-   "title": "vanaf het verkeersbord tot en met het volgend kruispunt, verbod voor de bestuurders om te keren.",
+   "title": "verbod om te keren",
    "info": []
   },
   {
@@ -665,7 +626,7 @@ window.BORDEN = {
    "code": "C35",
    "theme": "C",
    "img": "img/C35.png",
-   "title": "vanaf het verkeersbord tot en met het volgend kruispunt, verbod om een voertuig met meer dan twee wielen, een motorfiets of een gespan links in te halen",
+   "title": "verbod een voertuig links in te halen",
    "info": []
   },
   {
@@ -673,7 +634,7 @@ window.BORDEN = {
    "code": "C37",
    "theme": "C",
    "img": "img/C37.png",
-   "title": "einde van het verbod opgelegd door het verkeersbord C35",
+   "title": "einde verbod opgelegd door het verkeersbord C35",
    "info": []
   },
   {
@@ -681,7 +642,7 @@ window.BORDEN = {
    "code": "C39",
    "theme": "C",
    "img": "img/C39.png",
-   "title": "vanaf het verkeersbord tot en met het volgend kruispunt, verbod voor bestuurders van voertuigen of slepen bestemd voor het vervoer van goederen, met een maximale toegelaten massa van meer dan 3,5 ton, om een voertuig met meer dan twee wielen, een motorfiets of een gespan links in te halen",
+   "title": "verbod voertuigen met toegelaten massa > 3500 kg in te halen",
    "info": []
   },
   {
@@ -697,11 +658,8 @@ window.BORDEN = {
    "code": "C43",
    "theme": "C",
    "img": "img/C43.png",
-   "title": "vanaf het verkeersbord tot en met het volgend kruispunt, verbod te rijden met een grotere snelheid dan deze die is aangeduid",
-   "info": [
-    "Het verbod vervalt evenwel: 1° op de plaats waar een andere snelheidsbeperking geldt krachtens een verkeersbord; 2° op de plaats waar een verkeersbord het einde van een bebouwde kom aanduidt.",
-    "De vermelding “km” op het verkeersbord is facultatief."
-   ]
+   "title": "verbod te rijden met een grotere snelheid dan is aangeduid",
+   "info": []
   },
   {
    "id": "C45",
@@ -709,9 +667,7 @@ window.BORDEN = {
    "theme": "C",
    "img": "img/C45.png",
    "title": "einde van de snelheidsbeperking opgelegd door het verkeersbord C43",
-   "info": [
-    "De vermelding “km” op het verkeersbord is facultatief."
-   ]
+   "info": []
   },
   {
    "id": "C46",
@@ -726,15 +682,7 @@ window.BORDEN = {
    "code": "C47",
    "theme": "C",
    "img": "img/C47.png",
-   "title": "verbod voorbij te rijden zonder te betalen",
-   "info": []
-  },
-  {
-   "id": "C49",
-   "code": "C49",
-   "theme": "C",
-   "img": "img/C49.png",
-   "title": "verboden toegang voor motorvoertuigen waarvoor een selectief toegangsbeleid geldt dat gerechtvaardigd is met het oog op het vrijwaren van de levenskwaliteit, in het bijzonder vanwege de milieu-, lucht- en gezondheidshinder die deze voertuigen veroorzaken",
+   "title": "tolpost. Verbod voorbij te rijden zonder te stoppen",
    "info": []
   },
   {
@@ -742,7 +690,7 @@ window.BORDEN = {
    "code": "D1a",
    "theme": "D",
    "img": "img/D1a.png",
-   "title": "verplichting voor de bestuurders om op het kruispunt de door de pijl aangeduide richting te volgen",
+   "title": "verplichting rechtdoor",
    "info": []
   },
   {
@@ -750,7 +698,15 @@ window.BORDEN = {
    "code": "D1b",
    "theme": "D",
    "img": "img/D1b.png",
-   "title": "verplichting voor de bestuurders om op het kruispunt de door de pijl aangeduide richting te volgen",
+   "title": "verplichting links afslaan",
+   "info": []
+  },
+  {
+   "id": "D1b_2",
+   "code": "D1b",
+   "theme": "D",
+   "img": "img/D1b_2.png",
+   "title": "verplichting rechts afslaan",
    "info": []
   },
   {
@@ -758,7 +714,7 @@ window.BORDEN = {
    "code": "D1c",
    "theme": "D",
    "img": "img/D1c.png",
-   "title": "verplichting voor de bestuurders om op het kruispunt de door de pijl aangeduide richting te volgen",
+   "title": "verplichting links aanhouden",
    "info": []
   },
   {
@@ -766,7 +722,7 @@ window.BORDEN = {
    "code": "D1d",
    "theme": "D",
    "img": "img/D1d.png",
-   "title": "verplichting voor de bestuurders de hindernis langs de door de pijl aangeduide richting voorbij te rijden",
+   "title": "verplichting rechts aanhouden",
    "info": []
   },
   {
@@ -774,7 +730,7 @@ window.BORDEN = {
    "code": "D1e",
    "theme": "D",
    "img": "img/D1e.png",
-   "title": "verplichting voor de bestuurders de hindernis langs de door de pijl aangeduide richting voorbij te rijden",
+   "title": "verplicht de aangeduide richting te volgen (linksaf)",
    "info": []
   },
   {
@@ -782,15 +738,7 @@ window.BORDEN = {
    "code": "D1f",
    "theme": "D",
    "img": "img/D1f.png",
-   "title": "verplichting voor de bestuurders de door de pijl aangeduide richting te volgen",
-   "info": []
-  },
-  {
-   "id": "D1g",
-   "code": "D1g",
-   "theme": "D",
-   "img": "img/D1g.png",
-   "title": "verplichting voor de bestuurders de door de pijl aangeduide richting te volgen",
+   "title": "verplicht de aangeduide richting te volgen (rechtsaf)",
    "info": []
   },
   {
@@ -798,85 +746,79 @@ window.BORDEN = {
    "code": "D3a",
    "theme": "D",
    "img": "img/D3a.png",
-   "title": "verplichting voor de bestuurders één van de door de pijlen aangeduide richtingen te volgen",
-   "info": [
-    "De plaatsgesteldheid bepaalt de stand van de pijlen."
-   ]
+   "title": "verplicht één van de pijlen te volgen",
+   "info": []
   },
   {
    "id": "D3b",
    "code": "D3b",
    "theme": "D",
    "img": "img/D3b.png",
-   "title": "verplichting voor de bestuurders één van de door de pijlen aangeduide richtingen te volgen",
-   "info": [
-    "De plaatsgesteldheid bepaalt de stand van de pijlen."
-   ]
-  },
-  {
-   "id": "D3c",
-   "code": "D3c",
-   "theme": "D",
-   "img": "img/D3c.png",
-   "title": "verplichting voor de bestuurders één van de door de pijlen aangeduide richtingen te volgen",
-   "info": [
-    "De plaatsgesteldheid bepaalt de stand van de pijlen."
-   ]
+   "title": "verplicht één van de pijlen te volgen",
+   "info": []
   },
   {
    "id": "D4",
    "code": "D4",
    "theme": "D",
    "img": "img/D4.png",
-   "title": "verplichting voor voertuigen die gevaarlijke goederen vervoeren om de door de pijl aangeduide richting te volgen",
-   "info": [
-    "De plaatsgesteldheid bepaalt de stand van de pijl. (voorbeelden)"
-   ]
+   "title": "verplicht linksaf voor voertuigen die gevaarlijke goederen vervoeren",
+   "info": []
+  },
+  {
+   "id": "D4_2",
+   "code": "D4",
+   "theme": "D",
+   "img": "img/D4_2.png",
+   "title": "verplicht rechtdoor voor voertuigen die gevaarlijke goederen vervoeren",
+   "info": []
+  },
+  {
+   "id": "D4_3",
+   "code": "D4",
+   "theme": "D",
+   "img": "img/D4_3.png",
+   "title": "verplicht rechts voor voertuigen die gevaarlijke goederen vervoeren",
+   "info": []
   },
   {
    "id": "D5",
    "code": "D5",
    "theme": "D",
    "img": "img/D5.png",
-   "title": "rotonde",
-   "info": [
-    "Verplicht rondgaand verkeer in de door de pijlen aangeduide richting."
-   ]
+   "title": "verplicht rondgaand verkeer",
+   "info": []
   },
   {
    "id": "D7",
    "code": "D7",
    "theme": "D",
    "img": "img/D7.png",
-   "title": "fietspad",
-   "info": [
-    "Het verkeersbord geldt tot en met het volgend kruispunt."
-   ]
-  },
-  {
-   "id": "D8",
-   "code": "D8",
-   "theme": "D",
-   "img": "img/D8.png",
-   "title": "einde fietspad",
+   "title": "verplicht fietspad",
    "info": []
   },
   {
-   "id": "D9",
-   "code": "D9",
+   "id": "D9a",
+   "code": "D9a",
    "theme": "D",
-   "img": "img/D9.png",
-   "title": "deel van de openbare weg verplicht voor voetgangers, fietsers en bestuurders van tweewielige bromfietsen klasse A",
-   "info": [
-    "Het verkeersbord geldt tot en met het volgend kruispunt."
-   ]
+   "img": "img/D9a.png",
+   "title": "deel van de weg voorbehouden voor voetgangers en fietsers",
+   "info": []
+  },
+  {
+   "id": "D9b",
+   "code": "D9b",
+   "theme": "D",
+   "img": "img/D9b.png",
+   "title": "deel van de weg voorbehouden voor voetgangers en fietsers",
+   "info": []
   },
   {
    "id": "D10",
    "code": "D10",
    "theme": "D",
    "img": "img/D10.png",
-   "title": "einde van het deel van de openbare weg verplicht voor voetgangers, fietsers en bestuurders van tweewielige bromfietsen klasse A",
+   "title": "deel van de weg voorbehouden voor voetgangers en fietsers",
    "info": []
   },
   {
@@ -884,17 +826,7 @@ window.BORDEN = {
    "code": "D11",
    "theme": "D",
    "img": "img/D11.png",
-   "title": "deel van de openbare weg verplicht voor voetgangers en fietsers",
-   "info": [
-    "Het verkeersbord geldt tot en met het volgend kruispunt."
-   ]
-  },
-  {
-   "id": "D12",
-   "code": "D12",
-   "theme": "D",
-   "img": "img/D12.png",
-   "title": "einde van het deel van de openbare weg verplicht voor voetgangers en fietsers",
+   "title": "verplichte weg voor voetgangers",
    "info": []
   },
   {
@@ -902,57 +834,13 @@ window.BORDEN = {
    "code": "D13",
    "theme": "D",
    "img": "img/D13.png",
-   "title": "deel van de openbare weg verplicht voor voetgangers",
-   "info": [
-    "Het verkeersbord geldt tot en met het volgend kruispunt."
-   ]
-  },
-  {
-   "id": "D14",
-   "code": "D14",
-   "theme": "D",
-   "img": "img/D14.png",
-   "title": "einde van het deel van de openbare weg verplicht voor voetgangers",
-   "info": []
-  },
-  {
-   "id": "D15",
-   "code": "D15",
-   "theme": "D",
-   "img": "img/D15.png",
-   "title": "deel van de openbare weg verplicht voor ruiters",
-   "info": [
-    "Het verkeersbord geldt tot en met het volgend kruispunt."
-   ]
-  },
-  {
-   "id": "D16",
-   "code": "D16",
-   "theme": "D",
-   "img": "img/D16.png",
-   "title": "einde van het deel van de openbare weg verplicht voor ruiters",
-   "info": []
-  },
-  {
-   "id": "D17",
-   "code": "D17",
-   "theme": "D",
-   "img": "img/D17.png",
-   "title": "verplicht gebruik van de dimlichten",
-   "info": []
-  },
-  {
-   "id": "D18",
-   "code": "D18",
-   "theme": "D",
-   "img": "img/D18.png",
-   "title": "einde van het verplicht gebruik van de dimlichten, onverminderd artikel 44",
+   "title": "verplichte weg voor ruiters",
    "info": []
   },
   {
    "id": "E1",
    "code": "E1",
-   "theme": "EZ",
+   "theme": "E",
    "img": "img/E1.png",
    "title": "parkeerverbod",
    "info": []
@@ -960,17 +848,201 @@ window.BORDEN = {
   {
    "id": "E3",
    "code": "E3",
-   "theme": "EZ",
+   "theme": "E",
    "img": "img/E3.png",
    "title": "stilstaan en parkeren verboden",
    "info": []
   },
   {
-   "id": "E9",
-   "code": "E9",
-   "theme": "EZ",
-   "img": "img/E9.png",
+   "id": "E5",
+   "code": "E5",
+   "theme": "E",
+   "img": "img/E5.png",
+   "title": "parkeerverbod van de 1e tot de 15e van de maand",
+   "info": []
+  },
+  {
+   "id": "E7",
+   "code": "E7",
+   "theme": "E",
+   "img": "img/E7.png",
+   "title": "parkeerverbod van de 16e tot het einde van de maand",
+   "info": []
+  },
+  {
+   "id": "E9a",
+   "code": "E9a",
+   "theme": "E",
+   "img": "img/E9a.png",
    "title": "parkeren toegelaten",
+   "info": []
+  },
+  {
+   "id": "E9a_2",
+   "code": "E9a",
+   "theme": "E",
+   "img": "img/E9a_2.png",
+   "title": "parkeerplaats voorbehouden voor het elektrisch opladen van je wagen",
+   "info": []
+  },
+  {
+   "id": "E9a_3",
+   "code": "E9a",
+   "theme": "E",
+   "img": "img/E9a_3.png",
+   "title": "parkeren enkel toegelaten voor mindervaliden",
+   "info": []
+  },
+  {
+   "id": "E9a_4",
+   "code": "E9a",
+   "theme": "E",
+   "img": "img/E9a_4.png",
+   "title": "parkeren beperkt in tijd, parkeerschijf verplicht",
+   "info": []
+  },
+  {
+   "id": "E9b",
+   "code": "E9b",
+   "theme": "E",
+   "img": "img/E9b.png",
+   "title": "parkeren uitsluitend voor auto's",
+   "info": []
+  },
+  {
+   "id": "E9c",
+   "code": "E9c",
+   "theme": "E",
+   "img": "img/E9c.png",
+   "title": "parkeren uitsluitend voorvrachtwagens",
+   "info": []
+  },
+  {
+   "id": "E9d",
+   "code": "E9d",
+   "theme": "E",
+   "img": "img/E9d.png",
+   "title": "parkeren uitsluitend voor autocars",
+   "info": []
+  },
+  {
+   "id": "E9e",
+   "code": "E9e",
+   "theme": "E",
+   "img": "img/E9e.png",
+   "title": "verplicht parkeren op de berm of op het trottoir",
+   "info": []
+  },
+  {
+   "id": "E9f",
+   "code": "E9f",
+   "theme": "E",
+   "img": "img/E9f.png",
+   "title": "verplicht parkeren deels op de berm of op het trottoir",
+   "info": []
+  },
+  {
+   "id": "E9g",
+   "code": "E9g",
+   "theme": "E",
+   "img": "img/E9g.png",
+   "title": "verplicht parkeren op de rijbaan",
+   "info": []
+  },
+  {
+   "id": "E9h",
+   "code": "E9h",
+   "theme": "E",
+   "img": "img/E9h.png",
+   "title": "parkeren uitsluitend voor kampeerauto's",
+   "info": []
+  },
+  {
+   "id": "E9i",
+   "code": "E9i",
+   "theme": "E",
+   "img": "img/E9i.png",
+   "title": "parkeren uitsluitend voor motorfietsen",
+   "info": []
+  },
+  {
+   "id": "E9j",
+   "code": "E9j",
+   "theme": "E",
+   "img": "img/E9j.png",
+   "title": "parkeerplaats voorzien voor wisselend parkeren fietsers en auto’s",
+   "info": []
+  },
+  {
+   "id": "E11",
+   "code": "E11",
+   "theme": "E",
+   "img": "img/E11.png",
+   "title": "halfmaandelijks parkeren in gans de bebouwde kom",
+   "info": []
+  },
+  {
+   "id": "F1a",
+   "code": "F1a",
+   "theme": "F",
+   "img": "img/F1a.png",
+   "title": "begin van een bebouwde kom",
+   "info": []
+  },
+  {
+   "id": "F1b",
+   "code": "F1b",
+   "theme": "F",
+   "img": "img/F1b.png",
+   "title": "begin van een bebouwde kom",
+   "info": []
+  },
+  {
+   "id": "F3a",
+   "code": "F3a",
+   "theme": "F",
+   "img": "img/F3a.png",
+   "title": "einde van een bebouwde kom",
+   "info": []
+  },
+  {
+   "id": "F3b",
+   "code": "F3b",
+   "theme": "F",
+   "img": "img/F3b.png",
+   "title": "einde van een bebouwde kom",
+   "info": []
+  },
+  {
+   "id": "F4a",
+   "code": "F4a",
+   "theme": "F",
+   "img": "img/F4a.png",
+   "title": "zone 30 km/u",
+   "info": []
+  },
+  {
+   "id": "F4b",
+   "code": "F4b",
+   "theme": "F",
+   "img": "img/F4b.png",
+   "title": "einde zone 30 km/u",
+   "info": []
+  },
+  {
+   "id": "F5",
+   "code": "F5",
+   "theme": "F",
+   "img": "img/F5.png",
+   "title": "autosnelweg",
+   "info": []
+  },
+  {
+   "id": "F7",
+   "code": "F7",
+   "theme": "F",
+   "img": "img/F7.png",
+   "title": "einde autosnelweg",
    "info": []
   },
   {
@@ -982,56 +1054,75 @@ window.BORDEN = {
    "info": []
   },
   {
+   "id": "F9",
+   "code": "F9",
+   "theme": "F",
+   "img": "img/F9.png",
+   "title": "autoweg",
+   "info": []
+  },
+  {
+   "id": "F11",
+   "code": "F11",
+   "theme": "F",
+   "img": "img/F11.png",
+   "title": "einde van de autoweg",
+   "info": []
+  },
+  {
+   "id": "F12a",
+   "code": "F12a",
+   "theme": "F",
+   "img": "img/F12a.png",
+   "title": "begin van een woonerf of van een erf",
+   "info": []
+  },
+  {
+   "id": "F12b",
+   "code": "F12b",
+   "theme": "F",
+   "img": "img/F12b.png",
+   "title": "einde van een woonerf of van een erf",
+   "info": []
+  },
+  {
    "id": "F13",
    "code": "F13",
    "theme": "F",
    "img": "img/F13.png",
-   "title": "verkeersbord dat de voorsorteringspijlen op de rijbaan aankondigt. Dit verkeersbord kan ook de rijstrookmarkeringen weergeven.",
-   "info": [
-    "Dit verkeersbord kan de verschillende richtingen aanduiden.",
-    "De bestuurder moet afhankelijk van de richting die hij volgt, de aanwijzingen volgen."
-   ]
+   "title": "rijstrook keuze",
+   "info": []
   },
   {
    "id": "F14",
    "code": "F14",
    "theme": "F",
    "img": "img/F14.png",
-   "title": "opstelvak voorbehouden voor fietsers en bestuurders van tweewielige bromfietsen",
-   "info": [
-    "Dit verkeersbord kan ook de pijlen van het verkeersbord F13 weergeven."
-   ]
-  },
-  {
-   "id": "F15",
-   "code": "F15",
-   "theme": "F",
-   "img": "img/F15.png",
-   "title": "verkeersbord dat de keuze van een richting voorschrijft",
-   "info": [
-    "Neerwaarts of opwaarts gerichte pijlen hebben betrekking op doorgaande richtingen.",
-    "Schuine pijlen hebben betrekking op afslaande richtingen.",
-    "Het aantal pijlen vertegenwoordigt het aantal rijstroken.",
-    "De bestuurder moet afhankelijk van de richting die hij volgt, de aanwijzingen volgen."
-   ]
+   "title": "opstelvak voor fietsers en bromfietsen",
+   "info": []
   },
   {
    "id": "F17",
    "code": "F17",
    "theme": "F",
    "img": "img/F17.png",
-   "title": "busbaan",
-   "info": [
-    "De pijlen op het verkeersbord geven de rijrichting aan op het betrokken weggedeelte.",
-    "Dit verkeersbord kan ook de rijstrookmarkeringen weergeven. Naargelang het geval zijn deze wegmarkeringen doorlopend, onderbroken of beide."
-   ]
+   "title": "rijstrook aanduiding voorbehouden voor autobussen",
+   "info": []
+  },
+  {
+   "id": "F18",
+   "code": "F18",
+   "theme": "F",
+   "img": "img/F18.png",
+   "title": "bijzondere overrijdbare bedding",
+   "info": []
   },
   {
    "id": "F19",
    "code": "F19",
    "theme": "F",
    "img": "img/F19.png",
-   "title": "openbare weg met éénrichtingsverkeer",
+   "title": "eenrichtingsverkeer",
    "info": []
   },
   {
@@ -1071,23 +1162,7 @@ window.BORDEN = {
    "code": "F23d",
    "theme": "F",
    "img": "img/F23d.png",
-   "title": "nummer van een ring",
-   "info": []
-  },
-  {
-   "id": "F25",
-   "code": "F25",
-   "theme": "F",
-   "img": "img/F25.png",
-   "title": "voorwegwijzer",
-   "info": []
-  },
-  {
-   "id": "F27",
-   "code": "F27",
-   "theme": "F",
-   "img": "img/F27.png",
-   "title": "voorwegwijzer",
+   "title": "nummer van een ringweg",
    "info": []
   },
   {
@@ -1096,44 +1171,30 @@ window.BORDEN = {
    "theme": "F",
    "img": "img/F29.png",
    "title": "wegwijzer",
-   "info": [
-    "De afstand in kilometer kan op de wegwijzer aangeduid zijn."
-   ]
+   "info": []
   },
   {
    "id": "F31",
    "code": "F31",
    "theme": "F",
    "img": "img/F31.png",
-   "title": "wegwijzer: reisweg over een autosnelweg",
-   "info": [
-    "De afstand in kilometer kan op de wegwijzer aangeduid zijn."
-   ]
+   "title": "wegwijzer autostrade",
+   "info": []
   },
   {
    "id": "F33a",
    "code": "F33a",
    "theme": "F",
    "img": "img/F33a.png",
-   "title": "wegwijzer op afstand: luchthaven, beurs- of tentoonstellingshal, haven, car-ferry, zone met economische activiteiten, ziekenhuis",
+   "title": "bewegwijzeringsbord op afstand",
    "info": []
-  },
-  {
-   "id": "F33b",
-   "code": "F33b",
-   "theme": "F",
-   "img": "img/F33b.png",
-   "title": "wegwijzer op afstand: vallei of waterloop van toeristische aard",
-   "info": [
-    "De afstand in kilometer kan op de wegwijzer aangeduid zijn."
-   ]
   },
   {
    "id": "F33c",
    "code": "F33c",
    "theme": "F",
    "img": "img/F33c.png",
-   "title": "wegwijzer op afstand: sportcentrum of stadium of omnisporthal, historisch monument, ruïnes, klooster of abdij, cultureel park of recreatie- of pretpark, monument of merkwaardig landschap, natuurpark, trefpunt voor toeristische informatie, uitkijkpunt",
+   "title": "bewegwijzeringsbord op afstand",
    "info": []
   },
   {
@@ -1141,63 +1202,39 @@ window.BORDEN = {
    "code": "F34a",
    "theme": "F",
    "img": "img/F34a.png",
-   "title": "wegwijzer in de nabijheid van inrichtingen en etablissementen die openbaar zijn of van algemeen belang, bijvoorbeeld een treinstation, een ziekenhuis, een stadhuis of gemeentehuis, een postkantoor",
+   "title": "nabijheid van inrichting die van openbaar of algemeen belang is",
    "info": []
   },
   {
-   "id": "F34b.1",
-   "code": "F34b.1",
+   "id": "F34b1",
+   "code": "F34b1",
    "theme": "F",
-   "img": "img/F34b_1.png",
-   "title": "wegwijzer: aanbevolen reisweg voor bepaalde categorieën van weggebruikers",
-   "info": [
-    "Deze borden kunnen ook een groene achtergrond hebben."
-   ]
+   "img": "img/F34b1.png",
+   "title": "aanbevolen reisweg voor bepaalde weggebruikers",
+   "info": []
   },
   {
-   "id": "F34b.2",
-   "code": "F34b.2",
+   "id": "F34c1",
+   "code": "F34c1",
    "theme": "F",
-   "img": "img/F34b_2.png",
-   "title": "wegwijzer: aanbevolen reisweg voor bepaalde categorieën van weggebruikers",
-   "info": [
-    "Deze borden kunnen ook een groene achtergrond hebben."
-   ]
+   "img": "img/F34c1.png",
+   "title": "aanbevolen reisweg naar een toeristische bestemming voor bepaalde weggebruikers",
+   "info": []
   },
   {
-   "id": "F34c.1",
-   "code": "F34c.1",
+   "id": "F34c2",
+   "code": "F34c2",
    "theme": "F",
-   "img": "img/F34c_1.png",
-   "title": "wegwijzer: aanbevolen reisweg naar een toeristische bestemming voor bepaalde categorieën van weggebruikers",
-   "info": [
-    "Deze borden kunnen ook een groene achtergrond hebben."
-   ]
-  },
-  {
-   "id": "F34c.2",
-   "code": "F34c.2",
-   "theme": "F",
-   "img": "img/F34c_2.png",
-   "title": "wegwijzer: aanbevolen reisweg naar een toeristische bestemming voor bepaalde categorieën van weggebruikers",
-   "info": [
-    "Deze borden kunnen ook een groene achtergrond hebben."
-   ]
+   "img": "img/F34c2.png",
+   "title": "aanbevolen reisweg naar een toeristische bestemming voor bepaalde weggebruikers",
+   "info": []
   },
   {
    "id": "F35",
    "code": "F35",
    "theme": "F",
    "img": "img/F35.png",
-   "title": "wegwijzer: sportcentrum of stadium of omnisporthal, historisch monument, ruïnes, klooster of abdij, cultureel park of recreatie- of pretpark, monument of merkwaardig landschap, natuurpark, trefpunt voor toeristische informatie, uitkijkpunt",
-   "info": []
-  },
-  {
-   "id": "F36",
-   "code": "F36",
-   "theme": "F",
-   "img": "img/F36.png",
-   "title": "wegwijzer die fietsers of voetgangers geleidt naar een deel van de openbare weg",
+   "title": "plaats voor toerisme of ontspanning",
    "info": []
   },
   {
@@ -1205,7 +1242,7 @@ window.BORDEN = {
    "code": "F37",
    "theme": "F",
    "img": "img/F37.png",
-   "title": "wegwijzer: hotel of motel, restaurant, drankgelegenheid, kampeerterrein, kampeeraanhangwagen- terrein, kampeerwagen- terrein, jeugdherberg, picknickplaats",
+   "title": "wegwijzer naar hotels, campings, restaurant",
    "info": []
   },
   {
@@ -1213,7 +1250,7 @@ window.BORDEN = {
    "code": "F39",
    "theme": "F",
    "img": "img/F39.png",
-   "title": "voorwegwijzer die een omleiding aankondigt",
+   "title": "aankondiging van een omleiding",
    "info": []
   },
   {
@@ -1221,15 +1258,7 @@ window.BORDEN = {
    "code": "F41",
    "theme": "F",
    "img": "img/F41.png",
-   "title": "wegwijzer: omleiding",
-   "info": []
-  },
-  {
-   "id": "F42",
-   "code": "F42",
-   "theme": "F",
-   "img": "img/F42.png",
-   "title": "einde van een omleiding",
+   "title": "wegwijzer omleidingsweg",
    "info": []
   },
   {
@@ -1237,43 +1266,47 @@ window.BORDEN = {
    "code": "F43",
    "theme": "F",
    "img": "img/F43.png",
-   "title": "plaatsnaambord",
+   "title": "gemeentegrens",
    "info": []
   },
   {
-   "id": "F44",
-   "code": "F44",
+   "id": "F45",
+   "code": "F45",
    "theme": "F",
-   "img": "img/F44.png",
-   "title": "waterloop",
-   "info": []
-  },
-  {
-   "id": "F45a",
-   "code": "F45a",
-   "theme": "F",
-   "img": "img/F45a.png",
+   "img": "img/F45.png",
    "title": "doodlopende weg",
-   "info": [
-    "Het symbool kan aangepast zijn in functie van de plaatsgesteldheid."
-   ]
+   "info": []
+  },
+  {
+   "id": "F45L",
+   "code": "F45L",
+   "theme": "F",
+   "img": "img/F45L.png",
+   "title": "doodlopende weg, linkse doorgang",
+   "info": []
+  },
+  {
+   "id": "F45R",
+   "code": "F45R",
+   "theme": "F",
+   "img": "img/F45R.png",
+   "title": "doodlopende weg, rechtse doorgang",
+   "info": []
   },
   {
    "id": "F45b",
    "code": "F45b",
    "theme": "F",
    "img": "img/F45b.png",
-   "title": "doodlopende weg, uitgezonderd voor fietsers en voetgangers",
-   "info": [
-    "Het symbool kan aangepast zijn in functie van de plaatsgesteldheid."
-   ]
+   "title": "doodlopende weg, uitgezonderd voetgangers en fietsers",
+   "info": []
   },
   {
-   "id": "F48",
-   "code": "F48",
+   "id": "F47",
+   "code": "F47",
    "theme": "F",
-   "img": "img/F48.png",
-   "title": "oversteekplaats voor voetgangers",
+   "img": "img/F47.png",
+   "title": "einde van de werken",
    "info": []
   },
   {
@@ -1281,7 +1314,7 @@ window.BORDEN = {
    "code": "F49",
    "theme": "F",
    "img": "img/F49.png",
-   "title": "oversteekplaats voor fietsers en bestuurders van tweewielige bromfietsen",
+   "title": "oversteekplaats voor voetgangers",
    "info": []
   },
   {
@@ -1289,33 +1322,23 @@ window.BORDEN = {
    "code": "F50",
    "theme": "F",
    "img": "img/F50.png",
-   "title": "verkeersbord dat de bestuurders die van richting veranderen, wijst op een gevaar",
-   "info": [
-    "Het symbool op het gevaarsbord kan aangepast zijn in functie van de plaatsgesteldheid."
-   ]
-  },
-  {
-   "id": "F51",
-   "code": "F51",
-   "theme": "F",
-   "img": "img/F51.png",
-   "title": "ondergrondse of bovengrondse toegang voor voetgangers",
+   "title": "oversteekplaats voor fietsers en bromfietsers",
    "info": []
   },
   {
-   "id": "F52a",
-   "code": "F52a",
+   "id": "F50bis",
+   "code": "F50bis",
    "theme": "F",
-   "img": "img/F52a.png",
-   "title": "aankondiging van een nooduitgang",
+   "img": "img/F50bis.png",
+   "title": "opgepast als je van richting verandert, voetgangers",
    "info": []
   },
   {
-   "id": "F52b",
-   "code": "F52b",
+   "id": "F50bis_2",
+   "code": "F50bis",
    "theme": "F",
-   "img": "img/F52b.png",
-   "title": "vluchtroute: aankondiging van de dichtstbijzijnde nooduitgang, in de aangeduide richting",
+   "img": "img/F50bis_2.png",
+   "title": "opgepast als je van richting verandert, fietsers",
    "info": []
   },
   {
@@ -1323,7 +1346,7 @@ window.BORDEN = {
    "code": "F53",
    "theme": "F",
    "img": "img/F53.png",
-   "title": "ziekenhuis",
+   "title": "verplegingsinrichting",
    "info": []
   },
   {
@@ -1343,26 +1366,34 @@ window.BORDEN = {
    "info": []
   },
   {
-   "id": "F57",
-   "code": "F57",
-   "theme": "F",
-   "img": "img/F57.png",
-   "title": "aankondiging van een parking",
-   "info": []
-  },
-  {
-   "id": "F58",
-   "code": "F58",
-   "theme": "F",
-   "img": "img/F58.png",
-   "title": "aankondiging van een overdekte parking",
-   "info": []
-  },
-  {
    "id": "F59",
    "code": "F59",
    "theme": "F",
    "img": "img/F59.png",
+   "title": "aankondiging van een parking",
+   "info": []
+  },
+  {
+   "id": "F59a",
+   "code": "F59a",
+   "theme": "F",
+   "img": "img/F59a.png",
+   "title": "aankondiging van een parking",
+   "info": []
+  },
+  {
+   "id": "F59b",
+   "code": "F59b",
+   "theme": "F",
+   "img": "img/F59b.png",
+   "title": "aankondiging van een fietsparking",
+   "info": []
+  },
+  {
+   "id": "F60",
+   "code": "F60",
+   "theme": "F",
+   "img": "img/F60.png",
    "title": "overdekte parking",
    "info": []
   },
@@ -1371,60 +1402,46 @@ window.BORDEN = {
    "code": "F61",
    "theme": "F",
    "img": "img/F61.png",
-   "title": "aankondiging van een beveiligde parking",
-   "info": [
-    "Het maximaal aantal sloten en sterren is 5. De sterren zijn facultatief."
-   ]
+   "title": "telefoon",
+   "info": []
   },
   {
    "id": "F62",
    "code": "F62",
    "theme": "F",
    "img": "img/F62.png",
-   "title": "beveiligde parking",
-   "info": [
-    "Het maximaal aantal sloten is 5. De sterren, maximum 5, zijn facultatief."
-   ]
+   "title": "noodtelefoon",
+   "info": []
   },
   {
    "id": "F63",
    "code": "F63",
    "theme": "F",
    "img": "img/F63.png",
-   "title": "telefoon",
-   "info": []
-  },
-  {
-   "id": "F64",
-   "code": "F64",
-   "theme": "F",
-   "img": "img/F64.png",
-   "title": "noodtelefoon",
-   "info": []
-  },
-  {
-   "id": "F65a",
-   "code": "F65a",
-   "theme": "F",
-   "img": "img/F65a.png",
    "title": "tankstation",
-   "info": [
-    "Het type brandstof kan aangeduid zijn op het verkeersbord of op een onderbord."
-   ]
-  },
-  {
-   "id": "F65b",
-   "code": "F65b",
-   "theme": "F",
-   "img": "img/F65b.png",
-   "title": "elektrische laadpaal",
    "info": []
   },
   {
-   "id": "F66",
-   "code": "F66",
+   "id": "F63_2",
+   "code": "F63",
    "theme": "F",
-   "img": "img/F66.png",
+   "img": "img/F63_2.png",
+   "title": "tankstation voor elektrisch laden",
+   "info": []
+  },
+  {
+   "id": "F63_3",
+   "code": "F63",
+   "theme": "F",
+   "img": "img/F63_3.png",
+   "title": "tankstation met een specifieke brandstof",
+   "info": []
+  },
+  {
+   "id": "F65",
+   "code": "F65",
+   "theme": "F",
+   "img": "img/F65.png",
    "title": "hotel of motel",
    "info": []
   },
@@ -1441,7 +1458,7 @@ window.BORDEN = {
    "code": "F69",
    "theme": "F",
    "img": "img/F69.png",
-   "title": "restaurant drankgelegenheid",
+   "title": "drankgelegenheid",
    "info": []
   },
   {
@@ -1457,15 +1474,7 @@ window.BORDEN = {
    "code": "F73",
    "theme": "F",
    "img": "img/F73.png",
-   "title": "kampeeraanhangwagen- terrein",
-   "info": []
-  },
-  {
-   "id": "F74",
-   "code": "F74",
-   "theme": "F",
-   "img": "img/F74.png",
-   "title": "kampeerwagenterrein",
+   "title": "caravanterrein",
    "info": []
   },
   {
@@ -1477,67 +1486,11 @@ window.BORDEN = {
    "info": []
   },
   {
-   "id": "F76",
-   "code": "F76",
-   "theme": "F",
-   "img": "img/F76.png",
-   "title": "picknickplaats",
-   "info": []
-  },
-  {
    "id": "F77",
    "code": "F77",
    "theme": "F",
    "img": "img/F77.png",
-   "title": "trefpunt voor toeristische informatie",
-   "info": []
-  },
-  {
-   "id": "F78",
-   "code": "F78",
-   "theme": "F",
-   "img": "img/F78.png",
-   "title": "toilet",
-   "info": []
-  },
-  {
-   "id": "F79",
-   "code": "F79",
-   "theme": "F",
-   "img": "img/F79.png",
-   "title": "uitzichtpunt",
-   "info": []
-  },
-  {
-   "id": "F80",
-   "code": "F80",
-   "theme": "F",
-   "img": "img/F80.png",
-   "title": "tijdelijke aanwijzingen bij werken: voorwegwijzer die de vermindering van het aantal rijstroken aankondigt. Het symbool stemt overeen met de plaatsgesteldheid",
-   "info": []
-  },
-  {
-   "id": "F81",
-   "code": "F81",
-   "theme": "F",
-   "img": "img/F81.png",
-   "title": "tijdelijke aanwijzingen bij werken: voorwegwijzer die een uitwijking aankondigt. Het symbool stemt overeen met de plaatsgesteldheid",
-   "info": []
-  },
-  {
-   "id": "F83",
-   "code": "F83",
-   "theme": "F",
-   "img": "img/F83.png",
-   "title": "tijdelijke aanwijzingen bij werken: voorwegwijzer die een doorsteek van de middenberm aankondigt",
-   "info": []
-  },
-  {
-   "id": "F85",
-   "code": "F85",
-   "theme": "F",
-   "img": "img/F85.png",
-   "title": "tijdelijke aanwijzingen bij werken: verkeer toegelaten in beide richtingen op een deel van de rijbaan met éénrichtingsverkeer",
+   "title": "toeristische informatie",
    "info": []
   },
   {
@@ -1545,342 +1498,311 @@ window.BORDEN = {
    "code": "F87",
    "theme": "F",
    "img": "img/F87.png",
-   "title": "verhoogde inrichting",
+   "title": "verhoogde inrichting (vluchtheuvel)",
    "info": []
-  },
-  {
-   "id": "F91",
-   "code": "F91",
-   "theme": "F",
-   "img": "img/F91.png",
-   "title": "verkeersbord dat een gevaar, een verbod of een gebod aanduidt dat slechts van toepassing is op een deel van de openbare weg of op één of meerdere rijstroken van een rijbaan die meerdere rijstroken in dezelfde richting omvat",
-   "info": []
-  },
-  {
-   "id": "F93",
-   "code": "F93",
-   "theme": "F",
-   "img": "img/F93.png",
-   "title": "verkeersbord dat een radio-omroep aanduidt waar verkeersinformatie gegeven wordt",
-   "info": []
-  },
-  {
-   "id": "F95",
-   "code": "F95",
-   "theme": "F",
-   "img": "img/F95.png",
-   "title": "noodstopstrook",
-   "info": []
-  },
-  {
-   "id": "F96",
-   "code": "F96",
-   "theme": "F",
-   "img": "img/F96.png",
-   "title": "verkeersbord dat een uitwijking aankondigt",
-   "info": [
-    "Het aantal pijlen stemt overeen met het werkelijk aantal rijstroken. Het symbool stemt overeen met de plaatsgesteldheid."
-   ]
   },
   {
    "id": "F97",
    "code": "F97",
    "theme": "F",
    "img": "img/F97.png",
-   "title": "verkeersbord dat de vermindering van een rijstrook aanduidt",
+   "title": "rijstrook versmalling",
    "info": []
   },
   {
-   "id": "F98",
-   "code": "F98",
+   "id": "F99a",
+   "code": "F99a",
    "theme": "F",
-   "img": "img/F98.png",
-   "title": "vluchthaven",
+   "img": "img/F99a.png",
+   "title": "voorbehouden voor het verkeer van voetgangers, fietsers, ruiters en bestuurders van speed pedelecs",
    "info": []
   },
   {
-   "id": "F99",
-   "code": "F99",
+   "id": "F99b",
+   "code": "F99b",
    "theme": "F",
-   "img": "img/F99.png",
-   "title": "vluchthaven voor landbouwvoertuigen",
+   "img": "img/F99b.png",
+   "title": "deel van de openbare weg voorbehouden voor fietsers en voetgangers",
    "info": []
   },
   {
-   "id": "F100",
-   "code": "F100",
+   "id": "F99c",
+   "code": "F99c",
    "theme": "F",
-   "img": "img/F100.png",
-   "title": "grens",
+   "img": "img/F99c.png",
+   "title": "voorbehouden voor het verkeer van landbouwvoertuigen, voetgangers, fietsers, ruiters en bestuurders van speed pedelecs",
    "info": []
   },
   {
-   "id": "R1",
-   "code": "R1",
-   "theme": "R",
-   "img": "img/R1.png",
-   "title": "begin van een schoolomgeving",
-   "info": [
-    "De snelheidsbeperking dient als voorbeeld."
-   ]
-  },
-  {
-   "id": "R3",
-   "code": "R3",
-   "theme": "R",
-   "img": "img/R3.png",
-   "title": "einde van een schoolomgeving",
-   "info": [
-    "De snelheidsbeperking dient als voorbeeld."
-   ]
-  },
-  {
-   "id": "R5",
-   "code": "R5",
-   "theme": "R",
-   "img": "img/R5.png",
-   "title": "begin van een erf",
-   "info": [
-    "De maximale snelheid die er geldt, kan rechtsonder als aanwijzing op het verkeersbord aangeduid zijn."
-   ]
-  },
-  {
-   "id": "R7",
-   "code": "R7",
-   "theme": "R",
-   "img": "img/R7.png",
-   "title": "einde van een erf",
+   "id": "F101a",
+   "code": "F101a",
+   "theme": "F",
+   "img": "img/F101a.png",
+   "title": "einde voorbehouden voor het verkeer van voetgangers, fietsers, ruiters en bestuurders van speed pedelecs",
    "info": []
   },
   {
-   "id": "R9",
-   "code": "R9",
-   "theme": "R",
-   "img": "img/R9.png",
-   "title": "begin van een weg of van wegen voorbehouden voor het verkeer van de aangeduide weggebruikers",
-   "info": [
-    "Het verkeersbord kan aangepast zijn volgens de categorieën van weggebruikers. Op dit bord zijn ten minste 2 categorieën van weggebruikers aangeduid.",
-    "De maximale snelheid die er geldt, kan als aanwijzing rechtsonder op het verkeersbord aangeduid zijn."
-   ]
-  },
-  {
-   "id": "R11",
-   "code": "R11",
-   "theme": "R",
-   "img": "img/R11.png",
-   "title": "einde van een weg of van wegen voorbehouden voor het verkeer van de aangeduide weggebruikers",
+   "id": "F101b",
+   "code": "F101b",
+   "theme": "F",
+   "img": "img/F101b.png",
+   "title": "einde deel van de openbare weg voorbehouden voor fietsers en voetgangers",
    "info": []
   },
   {
-   "id": "R12",
-   "code": "R12",
-   "theme": "R",
-   "img": "img/R12.png",
-   "title": "begin van een niet verplicht fietspad",
-   "info": [
-    "De bijzondere voorschriften gelden tot en met het volgend kruispunt."
-   ]
-  },
-  {
-   "id": "R13",
-   "code": "R13",
-   "theme": "R",
-   "img": "img/R13.png",
-   "title": "einde van een niet verplicht fietspad",
+   "id": "F101c",
+   "code": "F101c",
+   "theme": "F",
+   "img": "img/F101c.png",
+   "title": "einde voorbehouden voor het verkeer van landbouwvoertuigen, voetgangers, fietsers, ruiters en bestuurders van speed pedelecs",
    "info": []
   },
   {
-   "id": "R14",
-   "code": "R14",
-   "theme": "R",
-   "img": "img/R14.png",
+   "id": "F103",
+   "code": "F103",
+   "theme": "F",
+   "img": "img/F103.png",
    "title": "begin van een voetgangerszone",
-   "info": [
-    "De maximale snelheid die er geldt, kan rechtsonder als aanwijzing op het verkeersbord aangeduid zijn."
-   ]
+   "info": []
   },
   {
-   "id": "R15",
-   "code": "R15",
-   "theme": "R",
-   "img": "img/R15.png",
+   "id": "F105",
+   "code": "F105",
+   "theme": "F",
+   "img": "img/F105.png",
    "title": "einde van een voetgangerszone",
    "info": []
   },
   {
-   "id": "R17",
-   "code": "R17",
-   "theme": "R",
-   "img": "img/R17.png",
-   "title": "begin van een fietszone",
-   "info": [
-    "De vermelding “Fietszone” kan bovenaan op het verkeersbord aangeduid zijn.",
-    "De maximale snelheid die er geldt, kan rechtsonder als aanwijzing op het verkeersbord aangeduid zijn."
-   ]
-  },
-  {
-   "id": "R19",
-   "code": "R19",
-   "theme": "R",
-   "img": "img/R19.png",
-   "title": "einde van een fietszone",
+   "id": "F111",
+   "code": "F111",
+   "theme": "F",
+   "img": "img/F111.png",
+   "title": "fietsstraat",
    "info": []
   },
   {
-   "id": "R21",
-   "code": "R21",
-   "theme": "R",
-   "img": "img/R21.png",
-   "title": "begin van een luchthavengebied",
-   "info": [
-    "De maximale snelheid die er geldt, kan rechtsonder als aanwijzing op het verkeersbord aangeduid zijn."
-   ]
-  },
-  {
-   "id": "R23",
-   "code": "R23",
-   "theme": "R",
-   "img": "img/R23.png",
-   "title": "einde van een luchthavengebied",
+   "id": "F113",
+   "code": "F113",
+   "theme": "F",
+   "img": "img/F113.png",
+   "title": "einde fietsstraat",
    "info": []
   },
   {
-   "id": "R25",
-   "code": "R25",
-   "theme": "R",
-   "img": "img/R25.png",
-   "title": "begin van een bebouwde kom",
-   "info": [
-    "De naam van de bebouwde kom kan, bovenaan in het midden, op het verkeersbord aangeduid zijn.",
-    "De maximale snelheid die er geldt, kan rechtsonder als aanwijzing op het verkeersbord aangeduid zijn."
-   ]
-  },
-  {
-   "id": "R27",
-   "code": "R27",
-   "theme": "R",
-   "img": "img/R27.png",
-   "title": "einde van een bebouwde kom",
+   "id": "F117",
+   "code": "F117",
+   "theme": "F",
+   "img": "img/F117.png",
+   "title": "begin van een lage emissiezone",
    "info": []
   },
   {
-   "id": "R29",
-   "code": "R29",
-   "theme": "R",
-   "img": "img/R29.png",
-   "title": "begin van een autosnelweg",
+   "id": "F118",
+   "code": "F118",
+   "theme": "F",
+   "img": "img/F118.png",
+   "title": "einde van een lage emissiezone",
    "info": []
   },
   {
-   "id": "R31",
-   "code": "R31",
-   "theme": "R",
-   "img": "img/R31.png",
-   "title": "einde van een autosnelweg",
+   "id": "GII",
+   "code": "GII",
+   "theme": "G",
+   "img": "img/GII.png",
+   "title": "aanduiding van de lengte van een gedeelte van de openbare weg",
    "info": []
   },
   {
-   "id": "R33",
-   "code": "R33",
-   "theme": "R",
-   "img": "img/R33.png",
-   "title": "begin van een autoweg",
-   "info": [
-    "De bijzondere voorschriften gelden tot het volgend kruispunt."
-   ]
-  },
-  {
-   "id": "R35",
-   "code": "R35",
-   "theme": "R",
-   "img": "img/R35.png",
-   "title": "einde van een autoweg",
+   "id": "GIII",
+   "code": "GIII",
+   "theme": "G",
+   "img": "img/GIII.png",
+   "title": "opgepast kans op ijzel",
    "info": []
   },
   {
-   "id": "R37",
-   "code": "R37",
-   "theme": "R",
-   "img": "img/R37.png",
-   "title": "begin van de werken",
+   "id": "GIII_2",
+   "code": "GIII",
+   "theme": "G",
+   "img": "img/GIII_2.png",
+   "title": "opgepast langsgroeven",
    "info": []
   },
   {
-   "id": "R39",
-   "code": "R39",
-   "theme": "R",
-   "img": "img/R39.png",
-   "title": "einde van de werken",
+   "id": "GIII_3",
+   "code": "GIII",
+   "theme": "G",
+   "img": "img/GIII_3.png",
+   "title": "opgepast uitrit",
    "info": []
   },
   {
-   "id": "Z1",
-   "code": "Z1",
-   "theme": "EZ",
-   "img": "img/Z1.png",
-   "title": "begin van een zone",
-   "info": [
-    "Het verkeersbord waaraan een zonale geldigheid wordt gegeven wordt afgebeeld op dit verkeersbord."
-   ]
-  },
-  {
-   "id": "Z1-E9",
-   "code": "Z1-E9",
-   "theme": "EZ",
-   "img": "img/Z1-E9.png",
-   "title": "begin van een parkeerzone",
+   "id": "GIII_4",
+   "code": "GIII",
+   "theme": "G",
+   "img": "img/GIII_4.png",
+   "title": "opgepast industriezone",
    "info": []
   },
   {
-   "id": "Z1-C43",
-   "code": "Z1-C43",
-   "theme": "EZ",
-   "img": "img/Z1-C43.png",
-   "title": "begin van een snelheidszone",
+   "id": "GIII_5",
+   "code": "GIII",
+   "theme": "G",
+   "img": "img/GIII_5.png",
+   "title": "opgepast kans op aquaplaning",
    "info": []
   },
   {
-   "id": "Z3",
-   "code": "Z3",
-   "theme": "EZ",
-   "img": "img/Z3.png",
-   "title": "einde van een zone",
-   "info": [
-    "Het verkeersbord bevat, in grijstinten en met behoud van de witte kleur, het verkeersbord waaraan de zonale geldigheid wordt gegeven."
-   ]
-  },
-  {
-   "id": "Z3-E9",
-   "code": "Z3-E9",
-   "theme": "EZ",
-   "img": "img/Z3-E9.png",
-   "title": "einde van een parkeerzone",
+   "id": "GIV",
+   "code": "GIV",
+   "theme": "G",
+   "img": "img/GIV.png",
+   "title": "enkel laden & lossen",
    "info": []
   },
   {
-   "id": "Z3-C43",
-   "code": "Z3-C43",
-   "theme": "EZ",
-   "img": "img/Z3-C43.png",
-   "title": "einde van een snelheidszone",
+   "id": "GIV_2",
+   "code": "GIV",
+   "theme": "G",
+   "img": "img/GIV_2.png",
+   "title": "beperking of verbod voor sommige weggebruikers",
    "info": []
   },
   {
-   "id": "Z5",
-   "code": "Z5",
-   "theme": "EZ",
-   "img": "img/Z5.png",
-   "title": "herinnering van een zone",
-   "info": [
-    "Het opschrift “herinnering” kan ook op een onderbord aangeduid zijn."
-   ]
+   "id": "GIX",
+   "code": "GIX",
+   "theme": "G",
+   "img": "img/GIX.png",
+   "title": "versmalling van een rijstrook",
+   "info": []
+  },
+  {
+   "id": "GIa",
+   "code": "GIa",
+   "theme": "G",
+   "img": "img/GIa.png",
+   "title": "aanduiding van een afstand",
+   "info": []
+  },
+  {
+   "id": "GIb",
+   "code": "GIb",
+   "theme": "G",
+   "img": "img/GIb.png",
+   "title": "aanduiding van een afstand",
+   "info": []
+  },
+  {
+   "id": "GV",
+   "code": "GV",
+   "theme": "G",
+   "img": "img/GV.png",
+   "title": "aanvulling op de verkeersborden stilstaan en parkeren",
+   "info": []
+  },
+  {
+   "id": "GVI",
+   "code": "GVI",
+   "theme": "G",
+   "img": "img/GVI.png",
+   "title": "aanduiding: herhaling",
+   "info": []
+  },
+  {
+   "id": "GVIII",
+   "code": "GVIII",
+   "theme": "G",
+   "img": "img/GVIII.png",
+   "title": "voorrangs aanduiding",
+   "info": []
+  },
+  {
+   "id": "GVIIa",
+   "code": "GVIIa",
+   "theme": "G",
+   "img": "img/GVIIa.png",
+   "title": "aanvulling van de verkeersborden voor parkeren",
+   "info": []
+  },
+  {
+   "id": "GVIIb",
+   "code": "GVIIb",
+   "theme": "G",
+   "img": "img/GVIIb.png",
+   "title": "aanvulling van de verkeersborden voor parkeren",
+   "info": []
+  },
+  {
+   "id": "GVIIc",
+   "code": "GVIIc",
+   "theme": "G",
+   "img": "img/GVIIc.png",
+   "title": "aanvulling van de verkeersborden voor parkeren",
+   "info": []
+  },
+  {
+   "id": "GVIId",
+   "code": "GVIId",
+   "theme": "G",
+   "img": "img/GVIId.png",
+   "title": "aanvulling van de verkeersborden voor parkeren",
+   "info": []
+  },
+  {
+   "id": "GXI",
+   "code": "GXI",
+   "theme": "G",
+   "img": "img/GXI.png",
+   "title": "afrit",
+   "info": []
+  },
+  {
+   "id": "GXa",
+   "code": "GXa",
+   "theme": "G",
+   "img": "img/GXa.png",
+   "title": "begin van de reglementering",
+   "info": []
+  },
+  {
+   "id": "GXb",
+   "code": "GXb",
+   "theme": "G",
+   "img": "img/GXb.png",
+   "title": "einde van de reglementering",
+   "info": []
+  },
+  {
+   "id": "GXc",
+   "code": "GXc",
+   "theme": "G",
+   "img": "img/GXc.png",
+   "title": "reglementering op een korte afstand",
+   "info": []
+  },
+  {
+   "id": "GXd",
+   "code": "GXd",
+   "theme": "G",
+   "img": "img/GXd.png",
+   "title": "reglementering op een lange afstand",
+   "info": []
   },
   {
    "id": "M1",
    "code": "M1",
    "theme": "M",
    "img": "img/M1.png",
-   "title": "onderbord dat bij benadering de afstand aanduidt tussen het verkeersbord en het begin van de gevaarlijke passage of het identieke verkeersbord als dat waaronder het is geplaatst",
+   "title": "enkel voor fietsers",
+   "info": []
+  },
+  {
+   "id": "M2",
+   "code": "M2",
+   "theme": "M",
+   "img": "img/M2.png",
+   "title": "uitgezonderd fietsers",
    "info": []
   },
   {
@@ -1888,7 +1810,23 @@ window.BORDEN = {
    "code": "M3",
    "theme": "M",
    "img": "img/M3.png",
-   "title": "onderbord dat het verkeersbord B5 aankondigt op de bij benadering aangeduide afstand",
+   "title": "uitgezonderd fietsers en bromfietsers klasse A",
+   "info": []
+  },
+  {
+   "id": "M3bis",
+   "code": "M3bis",
+   "theme": "M",
+   "img": "img/M3bis.png",
+   "title": "uitgezonderd fietsers en bromfietsers",
+   "info": []
+  },
+  {
+   "id": "M4",
+   "code": "M4",
+   "theme": "M",
+   "img": "img/M4.png",
+   "title": "fietsers mogen in 2 richtingen",
    "info": []
   },
   {
@@ -1896,7 +1834,23 @@ window.BORDEN = {
    "code": "M5",
    "theme": "M",
    "img": "img/M5.png",
-   "title": "onderbord dat bij benadering de afstand aanduidt waarover het verkeersbord van toepassing is",
+   "title": "fietsers en bromfietsers Klasse A mogen in 2 richtingen",
+   "info": []
+  },
+  {
+   "id": "M5bis",
+   "code": "M5bis",
+   "theme": "M",
+   "img": "img/M5bis.png",
+   "title": "fietsers, bromfietsers klasse A, B en speed pedelecs mogen in 2 richtingen",
+   "info": []
+  },
+  {
+   "id": "M6",
+   "code": "M6",
+   "theme": "M",
+   "img": "img/M6.png",
+   "title": "verplichting voor bromfietsen klasse B",
    "info": []
   },
   {
@@ -1904,7 +1858,7 @@ window.BORDEN = {
    "code": "M7",
    "theme": "M",
    "img": "img/M7.png",
-   "title": "begin van de reglementering",
+   "title": "verbod voor bromfietsen klasse B",
    "info": []
   },
   {
@@ -1912,17 +1866,23 @@ window.BORDEN = {
    "code": "M8",
    "theme": "M",
    "img": "img/M8.png",
-   "title": "einde van de reglementering",
-   "info": [
-    "Een aanduiding van het einde van de reglementering zal er niet zijn wanneer het samenvalt met een kruispunt of met een ander verkeersteken betreffende het stilstaan of het parkeren."
-   ]
+   "title": "enkel voor fietsers en bromfietsers",
+   "info": []
   },
   {
    "id": "M9",
    "code": "M9",
    "theme": "M",
    "img": "img/M9.png",
-   "title": "begin van de reglementering en de afstand waarover deze geldt",
+   "title": "fietsers in twee richtingen op de dwarslopende weg die je gaat oprijden",
+   "info": []
+  },
+  {
+   "id": "M10",
+   "code": "M10",
+   "theme": "M",
+   "img": "img/M10.png",
+   "title": "fietsers en bromfietser in twee richtingen op de dwarslopende weg die je gaat oprijden",
    "info": []
   },
   {
@@ -1930,7 +1890,15 @@ window.BORDEN = {
    "code": "M11",
    "theme": "M",
    "img": "img/M11.png",
-   "title": "voortzetting van de reglementering die voor het kruispunt van toepassing is of herinnering van de reglementering",
+   "title": "uitgezonderd fietsers en speed pedelecs",
+   "info": []
+  },
+  {
+   "id": "M12",
+   "code": "M12",
+   "theme": "M",
+   "img": "img/M12.png",
+   "title": "uitgezonderd fietsers, bromfietsers klasse A en speed pedelecs",
    "info": []
   },
   {
@@ -1938,17 +1906,31 @@ window.BORDEN = {
    "code": "M13",
    "theme": "M",
    "img": "img/M13.png",
-   "title": "herinnering van de reglementering",
-   "info": [
-    "Het aantal betrokken parkeerplaatsen kan op de pijl aangeduid zijn."
-   ]
+   "title": "verplichting voor speed pedelecs",
+   "info": []
+  },
+  {
+   "id": "M14",
+   "code": "M14",
+   "theme": "M",
+   "img": "img/M14.png",
+   "title": "verplichting voor bromfietsen klasse B en Speed pedelecs",
+   "info": []
   },
   {
    "id": "M15",
    "code": "M15",
    "theme": "M",
    "img": "img/M15.png",
-   "title": "de richting van de pijl of pijlen duidt aan waar de reglementering van toepassing is",
+   "title": "verbod voor speed pedelecs",
+   "info": []
+  },
+  {
+   "id": "M16",
+   "code": "M16",
+   "theme": "M",
+   "img": "img/M16.png",
+   "title": "verbod voor bromfietsen klasse B en speed pedelecs",
    "info": []
   },
   {
@@ -1956,7 +1938,7 @@ window.BORDEN = {
    "code": "M17",
    "theme": "M",
    "img": "img/M17.png",
-   "title": "parkeren op de berm of het trottoir",
+   "title": "fietsers en speed pedelecs mogen in 2 richtingen",
    "info": []
   },
   {
@@ -1964,7 +1946,7 @@ window.BORDEN = {
    "code": "M18",
    "theme": "M",
    "img": "img/M18.png",
-   "title": "parkeren deels op de berm of op het trottoir",
+   "title": "fietsers, bromfietsen klasse A en speed pedelecs mogen in 2 richtingen",
    "info": []
   },
   {
@@ -1972,7 +1954,7 @@ window.BORDEN = {
    "code": "M19",
    "theme": "M",
    "img": "img/M19.png",
-   "title": "parkeren verboden op het trottoir of op de verhoogde berm",
+   "title": "enkel voor speed pedelecs",
    "info": []
   },
   {
@@ -1980,337 +1962,271 @@ window.BORDEN = {
    "code": "M20",
    "theme": "M",
    "img": "img/M20.png",
-   "title": "parkeren verboden op het trottoir of op de verhoogde berm, voor motorfietsen, voor fietsen, voor voortbewegingstoestellen, of voor bromfietsen, afhankelijk van het symbool of symbolen die op het onderbord zijn aangebracht",
+   "title": "enkel voor fietsers en speed pedelecs",
    "info": []
   },
   {
-   "id": "M21a",
-   "code": "M21a",
-   "theme": "M",
-   "img": "img/M21a.png",
-   "title": "aanduiding van het weggedeelte waarop de reglementering geldt. Het betreft een uitbreiding van het toepassingsgebied. Parkeerstrook inbegrepen of een ander weggedeelte inbegrepen, afhankelijk van het opschrift of de opschriften die op het onderbord zijn aangebracht",
+   "id": "Type_IIa",
+   "code": "Type IIa",
+   "theme": "T",
+   "img": "img/Type_IIa.png",
+   "title": "baken voor zijdelingse signalisatie, links",
    "info": []
   },
   {
-   "id": "M21b",
-   "code": "M21b",
-   "theme": "M",
-   "img": "img/M21b.png",
-   "title": "aanduiding van het weggedeelte waarop de reglementering geldt. Het betreft een specificatie van het toepassingsgebied. Op het plein of op een ander weggedeelte, afhankelijk van het opschrift of de opschriften die op het onderbord zijn aangebracht.",
+   "id": "Type_IIb",
+   "code": "Type IIb",
+   "theme": "T",
+   "img": "img/Type_IIb.png",
+   "title": "baken voor zijdelingse signalisatie, rechts",
    "info": []
   },
   {
-   "id": "M23",
-   "code": "M23",
-   "theme": "M",
-   "img": "img/M23.png",
-   "title": "betalend parkeren",
+   "id": "Type_Ia1",
+   "code": "Type Ia1",
+   "theme": "T",
+   "img": "img/Type_Ia1.png",
+   "title": "bakens voor signalisatie op afstand, links",
    "info": []
   },
   {
-   "id": "M25",
-   "code": "M25",
-   "theme": "M",
-   "img": "img/M25.png",
-   "title": "verplicht gebruik van de parkeerschijf",
+   "id": "Type_Ia2",
+   "code": "Type Ia2",
+   "theme": "T",
+   "img": "img/Type_Ia2.png",
+   "title": "bakens voor signalisatie op afstand, splitsing links",
    "info": []
   },
   {
-   "id": "M27",
-   "code": "M27",
-   "theme": "M",
-   "img": "img/M27.png",
-   "title": "periode waarin het verbod of de toelating van toepassing is",
+   "id": "Type_Ib1",
+   "code": "Type Ib1",
+   "theme": "T",
+   "img": "img/Type_Ib1.png",
+   "title": "bakens voor signalisatie op afstand, rechts",
    "info": []
   },
   {
-   "id": "M29",
-   "code": "M29",
-   "theme": "M",
-   "img": "img/M29.png",
-   "title": "periode waarin het stilstaan is toegelaten",
+   "id": "Type_Ib2",
+   "code": "Type Ib2",
+   "theme": "T",
+   "img": "img/Type_Ib2.png",
+   "title": "bakens voor signalisatie op afstand, splitsing rechts",
    "info": []
   },
   {
-   "id": "M31",
-   "code": "M31",
-   "theme": "M",
-   "img": "img/M31.png",
-   "title": "periode waarin het verbod of de toelating niet van toepassing is",
+   "id": "Type_Ic",
+   "code": "Type Ic",
+   "theme": "T",
+   "img": "img/Type_Ic.png",
+   "title": "bebakening van een bocht",
    "info": []
   },
   {
-   "id": "M33-P.2",
-   "code": "M33-P.2",
-   "theme": "M",
-   "img": "img/M33-P_2.png",
-   "title": "fietsen",
+   "id": "Type_V",
+   "code": "Type V",
+   "theme": "T",
+   "img": "img/Type_V.png",
+   "title": "bebakening van een bocht",
    "info": []
   },
   {
-   "id": "M33-P.21",
-   "code": "M33-P.21",
-   "theme": "M",
-   "img": "img/M33-P_21.png",
-   "title": "voertuigen of slepen waarvan de maximaal toegelaten massa lager is dan of gelijk is aan de aangeduide massa",
+   "id": "Type_Va",
+   "code": "Type Va",
+   "theme": "T",
+   "img": "img/Type_Va.png",
+   "title": "bebakening van een bocht",
    "info": []
   },
   {
-   "id": "M33-P.23",
-   "code": "M33-P.23",
-   "theme": "M",
-   "img": "img/M33-P_23.png",
-   "title": "voertuigen of slepen waarvan de maximaal toegelaten massa hoger is dan de aangeduide massa",
+   "id": "ZC5",
+   "code": "ZC5",
+   "theme": "Z",
+   "img": "img/ZC5.png",
+   "title": "zone verboden toegang voor motorvoertuigen met meer dan 2 wielen",
    "info": []
   },
   {
-   "id": "M33-P.30",
-   "code": "M33-P.30",
-   "theme": "M",
-   "img": "img/M33-P_30.png",
-   "title": "laden en lossen van goederen",
+   "id": "ZC5_2",
+   "code": "ZC5/",
+   "theme": "Z",
+   "img": "img/ZC5_2.png",
+   "title": "einde zone verboden toegang voor motorvoertuigen met meer dan 2 wielen",
    "info": []
   },
   {
-   "id": "M41a-P.1",
-   "code": "M41a-P.1",
-   "theme": "M",
-   "img": "img/M41a-P_1.png",
-   "title": "uitgezonderd voetgangers",
+   "id": "ZC21",
+   "code": "ZC21",
+   "theme": "Z",
+   "img": "img/ZC21.png",
+   "title": "zone verboden toegang voor bestuurders van voertuigen waarvan de massa hoger is dan de aangeduide massa",
    "info": []
   },
   {
-   "id": "M41a-P.2",
-   "code": "M41a-P.2",
-   "theme": "M",
-   "img": "img/M41a-P_2.png",
-   "title": "uitgezonderd fietsers",
+   "id": "ZC21_2",
+   "code": "ZC21/",
+   "theme": "Z",
+   "img": "img/ZC21_2.png",
+   "title": "einde zone verboden toegang voor bestuurders van voertuigen waarvan de massa hoger is dan de aangeduide massa",
    "info": []
   },
   {
-   "id": "M41b-P.2",
-   "code": "M41b-P.2",
-   "theme": "M",
-   "img": "img/M41b-P_2.png",
-   "title": "fietsers toegelaten",
+   "id": "ZC21T",
+   "code": "ZC21T",
+   "theme": "Z",
+   "img": "img/ZC21T.png",
+   "title": "zone verboden toegang voor bestuurders van voertuigen waarvan de massa hoger is dan de aangeduide massa",
    "info": []
   },
   {
-   "id": "M41a-P.30",
-   "code": "M41a-P.30",
-   "theme": "M",
-   "img": "img/M41a-P_30.png",
-   "title": "uitgezonderd laden en lossen van goederen",
+   "id": "ZC21T_2",
+   "code": "ZC21T/",
+   "theme": "Z",
+   "img": "img/ZC21T_2.png",
+   "title": "einde zone verboden toegang voor bestuurders van voertuigen waarvan de massa hoger is dan de aangeduide massa",
    "info": []
   },
   {
-   "id": "M41a",
-   "code": "M41a",
-   "theme": "M",
-   "img": "img/M41a.png",
-   "title": "uitgezonderd plaatselijk verkeer",
+   "id": "ZC35",
+   "code": "ZC35",
+   "theme": "Z",
+   "img": "img/ZC35.png",
+   "title": "zone verboden inhalen",
    "info": []
   },
   {
-   "id": "M49",
-   "code": "M49",
-   "theme": "M",
-   "img": "img/M49.png",
-   "title": "van 7u tot 19u",
+   "id": "ZC35_2",
+   "code": "ZC35/",
+   "theme": "Z",
+   "img": "img/ZC35_2.png",
+   "title": "einde zone verboden inhalen",
    "info": []
   },
   {
-   "id": "M51",
-   "code": "M51",
-   "theme": "M",
-   "img": "img/M51.png",
-   "title": "sneeuw of ijzel",
+   "id": "ZC35T",
+   "code": "ZC35T",
+   "theme": "Z",
+   "img": "img/ZC35T.png",
+   "title": "zone verboden inhalen",
    "info": []
   },
   {
-   "id": "M53a",
-   "code": "M53a",
-   "theme": "M",
-   "img": "img/M53a.png",
-   "title": "verkeer in twee richtingen",
+   "id": "ZC35T_2",
+   "code": "ZC35T/",
+   "theme": "Z",
+   "img": "img/ZC35T_2.png",
+   "title": "einde zone verboden inhalen",
    "info": []
   },
   {
-   "id": "M53b",
-   "code": "M53b",
-   "theme": "M",
-   "img": "img/M53b.png",
-   "title": "fietsers in twee richtingen",
+   "id": "ZC43",
+   "code": "ZC43",
+   "theme": "Z",
+   "img": "img/ZC43.png",
+   "title": "zone met een snelheidsbeperking",
    "info": []
   },
   {
-   "id": "M53c",
-   "code": "M53c",
-   "theme": "M",
-   "img": "img/M53c.png",
-   "title": "fietsers en bestuurders van tweewielige bromfietsen in twee richtingen",
+   "id": "ZC45",
+   "code": "ZC45",
+   "theme": "Z",
+   "img": "img/ZC45.png",
+   "title": "einde zone met een snelheidsbeperking",
    "info": []
   },
   {
-   "id": "M53d",
-   "code": "M53d",
-   "theme": "M",
-   "img": "img/M53d.png",
-   "title": "fietsers in twee rijrichtingen",
+   "id": "ZE1",
+   "code": "ZE1",
+   "theme": "Z",
+   "img": "img/ZE1.png",
+   "title": "zone parkeerverbod",
    "info": []
   },
   {
-   "id": "M53e",
-   "code": "M53e",
-   "theme": "M",
-   "img": "img/M53e.png",
-   "title": "fietsers en bestuurders van tweewielige bromfietsen in twee rijrichtingen",
+   "id": "ZE1_2",
+   "code": "ZE1/",
+   "theme": "Z",
+   "img": "img/ZE1_2.png",
+   "title": "einde zone parkeerverbod",
    "info": []
   },
   {
-   "id": "M55a-P.8",
-   "code": "M55a-P.8",
-   "theme": "M",
-   "img": "img/M55a-P_8.png",
-   "title": "verplicht voor bestuurders van speedpedelecs",
+   "id": "ZE9T",
+   "code": "ZE9T",
+   "theme": "Z",
+   "img": "img/ZE9T.png",
+   "title": "zone parkeren voor voertuigen met een uitzondering",
    "info": []
   },
   {
-   "id": "M55b-P.8",
-   "code": "M55b-P.8",
-   "theme": "M",
-   "img": "img/M55b-P_8.png",
-   "title": "verboden voor bestuurders van tweewielige bromfietsen klasse B",
+   "id": "ZE9T_2",
+   "code": "ZE9T/",
+   "theme": "Z",
+   "img": "img/ZE9T_2.png",
+   "title": "einde zone parkeren voor voertuigen met een uitzondering",
    "info": []
   },
   {
-   "id": "M57a",
-   "code": "M57a",
-   "theme": "M",
-   "img": "img/M57a.png",
-   "title": "uitrit rechts van een rijbaan die in rijstroken is verdeeld",
+   "id": "ZE9a",
+   "code": "ZE9a",
+   "theme": "Z",
+   "img": "img/ZE9a.png",
+   "title": "zone parkeren uitsluitend voor auto's",
    "info": []
   },
   {
-   "id": "M57b",
-   "code": "M57b",
-   "theme": "M",
-   "img": "img/M57b.png",
-   "title": "uitrit links van een rijbaan die in rijstroken is verdeeld",
+   "id": "ZE9a_2",
+   "code": "ZE9a/",
+   "theme": "Z",
+   "img": "img/ZE9a_2.png",
+   "title": "einde zone parkeren uitsluitend voor auto's",
    "info": []
   },
   {
-   "id": "M59",
-   "code": "M59",
-   "theme": "M",
-   "img": "img/M59.png",
-   "title": "tracé van de weg waarop de bestuurders aan het volgend kruispunt voorrang hebben",
-   "info": [
-    "Het voorrangstraject aangeduid op het onderbord is aangepast in functie van de plaatsgesteldheid."
-   ]
-  },
-  {
-   "id": "M61",
-   "code": "M61",
-   "theme": "M",
-   "img": "img/M61.png",
-   "title": "herinnering van het verkeersbord waaronder het is geplaatst",
+   "id": "ZE9aT",
+   "code": "ZE9aT",
+   "theme": "Z",
+   "img": "img/ZE9aT.png",
+   "title": "zone parkeren uitsluitend voor auto's",
    "info": []
   },
   {
-   "id": "M63",
-   "code": "M63",
-   "theme": "M",
-   "img": "img/M63.png",
-   "title": "Dit onderbord aangebracht onder het verkeersbord C3 duidt een speelstraat aan.",
+   "id": "ZE9aT_2",
+   "code": "ZE9aT/",
+   "theme": "Z",
+   "img": "img/ZE9aT_2.png",
+   "title": "einde zone parkeren uitsluitend voor auto's",
    "info": []
   },
   {
-   "id": "M65",
-   "code": "M65",
-   "theme": "M",
-   "img": "img/M65.png",
-   "title": "Dit onderbord aangebracht onder het verkeersbord C3 duidt een schoolstraat aan.",
+   "id": "ZE9a_3",
+   "code": "ZE9a",
+   "theme": "Z",
+   "img": "img/ZE9a_3.png",
+   "title": "zone parkeren beperkt in tijd, parkeerschijf verplicht",
    "info": []
   },
   {
-   "id": "M67",
-   "code": "M67",
-   "theme": "M",
-   "img": "img/M67.png",
-   "title": "Dit onderbord aangebracht onder het verkeersbord F98 duidt een vluchthaven aan die is uitgerust met een noodtelefoon en een brandblusser.",
+   "id": "ZE9a_4",
+   "code": "ZE9a/",
+   "theme": "Z",
+   "img": "img/ZE9a_4.png",
+   "title": "einde zone parkeren beperkt in tijd, parkeerschijf verplicht",
    "info": []
   },
   {
-   "id": "M69",
-   "code": "M69",
-   "theme": "M",
-   "img": "img/M69.png",
-   "title": "Een onderbord met vermelding van de letter B, C, D of E duidt aan dat het verkeersbord geldt voor alle voertuigen die gevaarlijke goederen vervoeren waarvoor de toegang tot wegtunnels van respectievelijk categorie B, C, D of E verboden is, zoals deze categorieën voorzien zijn in artikel 1.9.5.2 van bijlage A van het Europees verdrag betreffende het internationaal vervoer van gevaarlijke goederen over de weg (ADR), ondertekend te Genève op 30 september 1957.",
+   "id": "Zone_F111",
+   "code": "Zone F111",
+   "theme": "Z",
+   "img": "img/Zone_F111.png",
+   "title": "zone Fietsstraat",
    "info": []
   },
   {
-   "id": "M71",
-   "code": "M71",
-   "theme": "M",
-   "img": "img/M71.png",
-   "title": "Dit onderbord aangebracht onder het verkeersbord F8 duidt de naam van de tunnel aan.",
-   "info": []
-  },
-  {
-   "id": "M73",
-   "code": "M73",
-   "theme": "M",
-   "img": "img/M73.png",
-   "title": "Dit onderbord aangebracht onder het verkeersbord A51 duidt de aard van het gevaar aan.",
-   "info": []
-  },
-  {
-   "id": "V1",
-   "code": "V1",
-   "theme": "V",
-   "img": "img/V1.png",
-   "title": "voertuigen die gebruikt worden voor het schoolvervoer",
-   "info": []
-  },
-  {
-   "id": "V2",
-   "code": "V2",
-   "theme": "V",
-   "img": "img/V2.png",
-   "title": "voertuigen bestemd voor het gemeenschappelijk vervoer van personen met een handicap",
-   "info": []
-  },
-  {
-   "id": "V3",
-   "code": "V3",
-   "theme": "V",
-   "img": "img/V3.png",
-   "title": "voertuigen die gebruikt worden ter bevordering van duurzame vormen van mobiliteit",
-   "info": []
-  },
-  {
-   "id": "V4",
-   "code": "V4",
-   "theme": "V",
-   "img": "img/V4.png",
-   "title": "voertuigen bestemd voor woon-werkverkeer",
-   "info": []
-  },
-  {
-   "id": "V5",
-   "code": "V5",
-   "theme": "V",
-   "img": "img/V5.png",
-   "title": "bord voor het begeleiden van een groep fietsers",
-   "info": []
-  },
-  {
-   "id": "gordel",
-   "code": "pictogram",
-   "theme": "V",
-   "img": "img/gordel.png",
-   "title": "verplichting om de veiligheidsgordel te dragen",
+   "id": "Zone_F113",
+   "code": "Zone F113",
+   "theme": "Z",
+   "img": "img/Zone_F113.png",
+   "title": "einde zone fietsstraat",
    "info": []
   }
  ]

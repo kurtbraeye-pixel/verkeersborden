@@ -6,7 +6,7 @@
   const BY_ID = new Map(SIGNS.map(s => [s.id, s]));
   const THEMES = DATA.themes;
   const THEME_NAME = Object.fromEntries(THEMES.map(t => [t.id, t.name]));
-  const THEME_ICON = { A: 'A1a', B: 'B1', C: 'C3', D: 'D1a', EZ: 'E1', F: 'F19', R: 'R25', M: 'M7', V: 'gordel' };
+  const THEME_ICON = { A: 'A1a', B: 'B1', C: 'C3', D: 'D1a', E: 'E1', F: 'F19', G: 'GXa', M: 'M1', T: 'Type_Ic', Z: 'ZC43' };
   const PER_THEME = 20;
   const ALL_MIX = 30;
   const PASS = 0.82; // examennorm theorie-examen (41/50)
